@@ -1,5 +1,2 @@
 #!/bin/bash
-LD_LIBRARY_PATH=./lib/pc
-export LD_LIBRARY_PATH
-java -jar java/dist/lib/HelloCMake.jar 
-
+java -Djava.library.path=./lib/pc/Debug -jar java/dist/lib/HelloCMake.jar 
